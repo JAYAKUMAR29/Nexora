@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant for BIS | Smart India Hackathon</title>
+    <meta name="description" content="AI-Powered Intelligent Assistant for Indian Standards and BIS Services. A Smart India Hackathon Project by Rathinam Technical Campus.">
+    
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. HEADER / TOP NAVIGATION -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-logos">
+                <img src="sih logo/sih logo.jpeg" alt="SIH Logo" style="height: 40px; object-fit: contain;">
+                <div class="logo-divider"></div>
+                <img src="project LOGO/logo.jpeg" alt="Team Logo" style="height: 40px; object-fit: contain;">
+                <img src="colllege logo/college logo.jpeg" alt="RTC Logo" class="hide-mobile" style="height: 40px; object-fit: contain;">
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#hero" class="nav-link active">HOME</a>
+                <a href="#team" class="nav-link">TEAM</a>
+                <a href="#mentors" class="nav-link">MENTORS</a>
+                <a href="#project" class="nav-link">PROJECT</a>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-elements">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container hero-content text-center">
+            <h2 class="subtitle gradient-text fade-up">SMART INDIA HACKATHON</h2>
+            <h1 class="main-title fade-up delay-1">AI-Powered Intelligent Assistant for Indian Standards and BIS Services</h1>
+            <p class="hero-description fade-up delay-2">
+                Building an intelligent, reliable, and accessible AI-powered assistant to simplify Indian Standards and BIS services through Retrieval-Augmented Generation.
+            </p>
+            <div class="hero-buttons fade-up delay-3">
+                <a href="#team" class="btn btn-primary">MEET OUR TEAM</a>
+                <a href="#project" class="btn btn-secondary">EXPLORE OUR PROJECT</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PROJECT IDENTITY SECTION -->
+    <section id="project" class="section project-identity">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">OUR INNOVATION</h2>
+                <p class="section-subtitle">
+                    Our team is developing an AI-powered intelligent assistant designed to help users access and understand information related to Indian Standards and BIS services. The system uses modern AI and Retrieval-Augmented Generation techniques to retrieve relevant information from official BIS documents and provide clear, reliable responses.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- CARD 1 -->
+                <div class="glass-card feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI POWERED</h3>
+                    <p>Uses generative AI to understand user questions and provide intelligent responses.</p>
+                </div>
+                <!-- CARD 2 -->
+                <div class="glass-card feature-card fade-up delay-1">
+                    <div class="feature-icon"><i class="fas fa-database"></i></div>
+                    <h3>RAG TECHNOLOGY</h3>
+                    <p>Retrieves relevant information from the BIS knowledge base before generating answers.</p>
+                </div>
+                <!-- CARD 3 -->
+                <div class="glass-card feature-card fade-up delay-2">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>SMART SEARCH</h3>
+                    <p>Uses semantic search and vector embeddings to find relevant BIS information.</p>
+                </div>
+                <!-- CARD 4 -->
+                <div class="glass-card feature-card fade-up delay-3">
+                    <div class="feature-icon"><i class="fas fa-info-circle"></i></div>
+                    <h3>ACCESSIBLE INFORMATION</h3>
+                    <p>Helps users find important BIS information faster and more efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. PROJECT ARCHITECTURE SECTION -->
+    <section class="section project-architecture bg-darker">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">PROJECT ARCHITECTURE</h2>
+                <p class="section-subtitle">Our architecture combines document retrieval, vector search, generative AI, backend services, and a user-friendly interface to create a reliable BIS information assistant.</p>
+            </div>
+            
+            <div class="architecture-diagram fade-up">
+                <div class="arch-flow">
+                    <div class="arch-node">BIS DOCUMENTS</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">TEXT EXTRACTION</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">DOCUMENT CHUNKING</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">GEMINI EMBEDDINGS</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node highlight">VECTOR DATABASE (CHROMADB)</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">SEMANTIC SEARCH</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">RELEVANT BIS INFORMATION</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node highlight-ai">GEMINI GENERATIVE AI</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">PyTorch</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node">FRONTEND</div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-node final-node">USER</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TECHNOLOGY STACK SECTION -->
+    <section class="section tech-stack bg-darker">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">TECHNOLOGY STACK</h2>
+            </div>
+            
+            <div class="tech-groups">
+                <div class="tech-group fade-up">
+                    <div class="tech-grid">
+                        <div class="tech-card">Python</div>
+                        <div class="tech-card">Gemini API</div>
+                        <div class="tech-card">Gemini Embeddings</div>
+                        <div class="tech-card">ChromaDB</div>
+                        <div class="tech-card">RAG</div>
+                        <div class="tech-card">Semantic Search</div>
+                    </div>
+                </div>
+                
+                <div class="tech-group fade-up delay-1">
+                    <div class="tech-grid upcoming-tech">
+                        <div class="tech-card">Python</div>
+                        <div class="tech-card">PyTorch</div>
+                        <div class="tech-card">Frontend</div>
+                        <div class="tech-card">Cloud Vector Database</div>
+                        <div class="tech-card">Cloud Deployment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 & 5. TEAM SECTION -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">MEET OUR TEAM</h2>
+                <p class="section-subtitle">The people behind the innovation.</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- TEAM MEMBER 1 -->
+                <div class="glass-card team-card fade-up">
+                    <div class="profile-photo-wrapper">
+                        <img src="teammembers/BLAZER PHOTO.jpg" alt="Jayakumar V" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="member-name">JAYAKUMAR V</h3>
+                    <h4 class="member-role highlight-text">TECHNICAL SUPPORT</h4>
+                </div>
+                
+                <!-- TEAM MEMBER 2 -->
+                <div class="glass-card team-card fade-up delay-1">
+                    <div class="profile-photo-wrapper">
+                        <img src="teammembers/Mohana Chandra.jpeg" alt="Mohana Chandra" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="member-name">MOHANA CHANDRA</h3>
+                    <h4 class="member-role highlight-text">TEAM LEAD & PROJECT MANAGER</h4>
+                </div>
+                
+                <!-- TEAM MEMBER 3 -->
+                <div class="glass-card team-card fade-up delay-2">
+                    <div class="profile-photo-wrapper">
+                        <img src="teammembers/Suvitha.jpeg" alt="Suvitha" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="member-name">SUVITHA</h3>
+                    <h4 class="member-role highlight-text">TECHNICAL LEAD</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TEAM WORKFLOW SECTION -->
+    <section class="section workflow-section bg-darker">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">HOW OUR TEAM WORKS</h2>
+            </div>
+            
+            <div class="workflow-visual fade-up">
+                <div class="workflow-node">
+                    <div class="node-title">TEAM LEAD & PROJECT MANAGER</div>
+                    <div class="node-action">PROJECT PLANNING & COORDINATION</div>
+                </div>
+                <div class="workflow-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <div class="workflow-node">
+                    <div class="node-title">TECHNICAL LEAD</div>
+                    <div class="node-action">SYSTEM ARCHITECTURE & DEVELOPMENT</div>
+                </div>
+                <div class="workflow-connector"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <div class="workflow-node">
+                    <div class="node-title">TECHNICAL SUPPORT</div>
+                    <div class="node-action">IMPLEMENTATION, INTEGRATION & TESTING</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 & 8. MENTORS SECTION -->
+    <section id="mentors" class="section mentors-section">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">OUR MENTORS</h2>
+                <p class="section-subtitle">Guidance that strengthens our innovation.</p>
+            </div>
+            
+            <div class="mentors-grid">
+                <!-- MENTOR 1 -->
+                <div class="glass-card mentor-card fade-up">
+                    <div class="mentor-label">MENTOR</div>
+                    <div class="profile-photo-wrapper">
+                        <img src="mentors/muthusamy sir image.jpeg" alt="Mr. K. MUTHUSAMY" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="member-name">Mr. K. MUTHUSAMY</h3>
+                    <h4 class="member-role">Technical Competitions Head, Rathinam Technical Campus</h4>
+                </div>
+                
+                <!-- MENTOR 2 -->
+                <div class="glass-card mentor-card fade-up delay-1">
+                    <div class="mentor-label">MENTOR</div>
+                    <div class="profile-photo-wrapper">
+                        <img src="mentors/gajendharan sir image.jpeg" alt="Er. Gajendran Parthasarathi" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 class="member-name">Er. Gajendran Parthasarathi</h3>
+                    <h4 class="member-role">Head - School of Design and Innovation, Rathinam Technical Campus</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 12. TEAM VALUES SECTION -->
+    <section class="section team-values bg-darker">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">WHAT DRIVES US</h2>
+            </div>
+            
+            <div class="values-grid">
+                <div class="glass-card value-card fade-up">
+                    <i class="fas fa-lightbulb value-icon"></i>
+                    <h3>INNOVATION</h3>
+                    <p>We build technology to solve real-world problems.</p>
+                </div>
+                <div class="glass-card value-card fade-up delay-1">
+                    <i class="fas fa-users value-icon"></i>
+                    <h3>COLLABORATION</h3>
+                    <p>We combine different skills and ideas to build one solution.</p>
+                </div>
+                <div class="glass-card value-card fade-up delay-2">
+                    <i class="fas fa-shield-alt value-icon"></i>
+                    <h3>RELIABILITY</h3>
+                    <p>We focus on trustworthy and document-grounded information.</p>
+                </div>
+                <div class="glass-card value-card fade-up delay-3">
+                    <i class="fas fa-globe value-icon"></i>
+                    <h3>IMPACT</h3>
+                    <p>Our goal is to make BIS information easier to access and understand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14 & 13. SIH & COLLEGE SECTION -->
+    <section class="section partners-section">
+        <div class="container">
+            <div class="partners-grid">
+                <!-- 14. SMART INDIA HACKATHON -->
+                <div class="glass-card partner-card sih-card fade-up">
+                    <img src="sih logo/sih logo.jpeg" alt="SIH Logo" style="height: 80px; object-fit: contain; margin-bottom: 1rem;">
+                    <h3 class="partner-title">SMART INDIA HACKATHON</h3>
+                    <h4 class="partner-subtitle">Building technology for real-world impact.</h4>
+                </div>
+                
+                <!-- 13. COLLEGE -->
+                <div class="glass-card partner-card college-card fade-up delay-1">
+                    <img src="colllege logo/college logo.jpeg" alt="RTC Logo" style="height: 80px; object-fit: contain; margin-bottom: 1rem;">
+                    <h3 class="partner-title">RATHINAM TECHNICAL CAMPUS</h3>
+                    <h4 class="partner-subtitle">Supporting innovation, technology, design, and student-led solutions.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            
+
+            
+            <div class="footer-nav">
+                <a href="#hero">Home</a>
+                <a href="#team">Team</a>
+                <a href="#mentors">Mentors</a>
+                <a href="#project">Project</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 — Project Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
